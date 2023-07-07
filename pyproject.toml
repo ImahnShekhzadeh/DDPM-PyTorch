@@ -1,0 +1,28 @@
+[project]
+requires-python = ">=3.11.3"
+name = "ddpm-pytorch"
+version = "1.0.0"
+
+dependencies = [
+    "isort", 
+    "black", 
+    "pytest", 
+    "numpy",
+    "setuptools >= 45",
+    "matplotlib",
+    "disba[full]",
+    "torch ",
+    "torchvision",
+    "torchaudio",
+    "wandb",
+    "sbi",
+    "hydra-core", 
+    "hydra-joblib-launcher", 
+    "hydra-submitit-launcher", # HPC Hydra
+    "pytest-cov >= 4.0.0",
+    "build >= 0.9.0",
+]
+
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
